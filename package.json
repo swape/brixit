@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "Alireza Balouch <swape@swape.net>",
   "description": "Demo project to demonstrate parcel, lit-html and stylus.",
+  "repository": "https://github.com/swape/brixit",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html -d public/"
