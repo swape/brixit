@@ -1,0 +1,19 @@
+{
+  "name": "Brixit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Alireza Balouch <swape@swape.net>",
+  "description": "Demo project to demonstrate parcel, lit-html and stylus.",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "stylus": "^0.54.7"
+  }
+}
