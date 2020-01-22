@@ -1,0 +1,8 @@
+{
+  "name":"brixit",
+  "version": 2,
+  "alias": ["brixit.swape.net"],
+  "routes": [
+    { "src": "/", "dest": "/public"}
+  ]
+}
