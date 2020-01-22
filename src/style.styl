@@ -1,0 +1,102 @@
+$gray = #cccccc
+$lego-color1 = rgba( 250, 250, 250, .3 )
+$lego-color2 = rgba( 0, 0, 0, .5 )
+$cellWH = 30px
+
+body
+  font-family: monospace
+
+h1
+  text-align: center
+  font-size: 14em
+  margin: 0
+
+.pink
+  background-color: pink
+
+.red
+  background-color:red
+
+.blue
+  background-color:blue
+  color:white
+
+.black
+  background-color:black
+  color:white
+
+.green
+  background-color: green
+
+.yellow
+  background-color: yellow
+  
+.container
+  display:flex
+  padding: 10px
+  justify-content: center
+
+  .matrix
+    flex: 0 0 auto
+    box-shadow: 1px 1px 0 $gray
+    margin-right: $cellWH 
+    font-family: sans-serif
+
+    .row
+      display: flex
+      .cell
+        width: $cellWH
+        height:$cellWH
+        display: flex
+        box-shadow: 1px 1px 0 $gray inset
+        cursor: pointer
+        &:after
+          background: radial-gradient( circle at 50%, $lego-color2, $lego-color2 40%, $lego-color1 0%, $lego-color2  200% )
+          content: ''
+          display:block
+          width:$cellWH 
+          height:$cellWH 
+          opacity: .2
+        &:hover
+          &:after
+            opacity: .7
+
+.controls
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  max-width: 250px
+
+  .selected-color
+    padding: 20px
+    margin: 2px
+    text-align: center
+    font-size: 1.2em
+
+  .options > div
+    padding: 5px
+    margin-top: 2px
+    border: 2px solid black
+    background-color: yellow
+    text-align: center
+    cursor: pointer
+    &:hover
+      background-color: antiquewhite
+
+  .colors
+    flex: 0 0 200px
+    flex-wrap: wrap
+    display:flex
+    align-content: center
+    justify-content: space-between
+    .color
+      flex: 1 0 auto;
+      justify-content: center
+      display: flex
+      padding: 10px
+      margin: 2px
+      cursor: pointer
+      border: 2px groove darkblue
+      &:hover
+        background-color: antiquewhite
+        color: black
