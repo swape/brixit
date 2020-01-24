@@ -11,9 +11,7 @@ const header = html`
 const myTemplate = () => html`
   ${header}
   <div class="container">${drawMatrix()}${drawControls()}</div>
-  <div class="container">
-    Made by Alireza Balouch with lit-html, parcel and stylus.
-  </div>
+  <div class="container">Made by Alireza Balouch with lit-html, parcel and stylus.</div>
   <div class="container"><a href="https://github.com/swape/brixit" target="_blank" rel="noopener">github.com/swape/brixit</a></div> 
 `
 
