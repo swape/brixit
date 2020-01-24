@@ -1,8 +1,8 @@
 import { html, render } from 'lit-html'
-import { initRerender, reRender } from './src/common'
+import { initRerender, reRender } from './common'
 
-import drawControls from './src/controls'
-import drawMatrix from './src/matrix'
+import drawControls from './controls'
+import drawMatrix from './matrix'
 
 const header = html`
   <h1>BRIXIT</h1>
