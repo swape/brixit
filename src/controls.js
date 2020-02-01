@@ -3,13 +3,11 @@ import { html } from 'lit-html'
 import { reRender } from './common'
 import store from './store'
 
-// actions
 const setColor = colorName => {
   store.selectedColor = colorName
   reRender()
 }
 
-// templates
 const selectedColor = () => html`
   <div class="selected-color ${store.selectedColor}">
     Selected color: ${store.selectedColor}
