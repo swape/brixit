@@ -1,6 +1,6 @@
 const store = {
   selectedColor: 'red',
-  shapes: {},
+  pos: {},
 }
 
 export default store

@@ -4,16 +4,16 @@ import { reRender } from './common'
 import { repeat } from 'lit-html/directives/repeat.js'
 import store from './store'
 
-const toggleShape = shapeName => {
-  if (!store.shapes[shapeName]) {
-    store.shapes[shapeName] = store.selectedColor
+const togglePosColor = posName => {
+  if (!store.pos[posName]) {
+    store.pos[posName] = store.selectedColor
   } else {
-    store.shapes[shapeName] = ''
+    store.pos[posName] = ''
   }
 }
 
-const clickHandler = shapeName => {
-  toggleShape(shapeName)
+const clickHandler = posName => {
+  togglePosColor(posName)
   reRender()
 }
 
@@ -21,22 +21,22 @@ document.addEventListener(
   'dragover',
   function(event) {
     event.preventDefault()
-    if (event.target.dataset.shapename) {
-      store.shapes[event.target.dataset.shapename] = store.selectedColor
+    if (event.target.dataset.posname) {
+      store.pos[event.target.dataset.posname] = store.selectedColor
       reRender()
     }
   },
   false
 )
 
-const getColor = shapeName => store.shapes[shapeName] || ''
+const getColor = posName => store.pos[posName] || ''
 
 // templates
 const cellSpan = cell => html`
   <span
-    class="cell ${getColor(cell.shapeName)}"
-    @click=${() => clickHandler(cell.shapeName)}
-    data-shapename="${cell.shapeName}"
+    class="cell ${getColor(cell.posName)}"
+    @click=${() => clickHandler(cell.posName)}
+    data-posname="${cell.posName}"
     draggable="true"
   ></span>
 `
