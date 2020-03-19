@@ -1,3 +1,5 @@
+// @ts-check
+
 import { html, render } from 'lit-html'
 import { initRerender, reRender } from './common'
 

@@ -1,3 +1,5 @@
+// @ts-check
+
 export const colors = ['red', 'blue', 'black', 'pink', 'green', 'yellow']
 
 export const width = 16

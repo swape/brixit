@@ -1,4 +1,6 @@
-let reRenderFunction = ''
+// @ts-check
+
+let reRenderFunction = null
 
 export const initRerender = cb => (reRenderFunction = cb)
 

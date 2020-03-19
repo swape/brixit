@@ -1,3 +1,5 @@
+// @ts-check
+
 import { colors } from './constants'
 import { html } from 'lit-html'
 import { reRender } from './common'

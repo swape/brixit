@@ -1,3 +1,5 @@
+// @ts-check
+
 import { html } from 'lit-html'
 import { myMatrix } from './constants'
 import { reRender } from './common'
