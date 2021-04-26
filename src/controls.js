@@ -34,10 +34,10 @@ const options = html`
   </div>
 `
 
-const drawControlls = () => html`
+const drawControls = () => html`
   <div class="controls">
     ${selectedColor()} ${controlColors} ${options}
   </div>
 `
 
-export default drawControlls
+export default drawControls

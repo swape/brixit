@@ -49,10 +49,10 @@ const rowDiv = row => html`
   </div>
 `
 
-const drawMaterix = () => html`
+const drawMatrix = () => html`
   <div class="matrix">
     ${repeat(myMatrix, row => rowDiv(row))}
   </div>
 `
 
-export default drawMaterix
+export default drawMatrix
