@@ -15,7 +15,6 @@
     "parcel": "^2.0.0-beta.2"
   },
   "devDependencies": {
-    "@parcel/transformer-stylus": "^2.0.0-beta.2",
     "cssnano": "^4.1.10",
     "stylus": "^0.54.8"
   }
