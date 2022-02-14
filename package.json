@@ -1,7 +1,6 @@
 {
   "name": "brixit",
   "version": "1.0.0",
-  "main": "public/index.html",
   "license": "MIT",
   "author": "Alireza Balouch <swape@swape.net>",
   "description": "Demo project to demonstrate parcel and lit-html",
@@ -11,12 +10,12 @@
     "build": "npx parcel build ./src/index.html --no-source-maps"
   },
   "dependencies": {
-    "lit-html": "^1.3.0",
-    "parcel": "^2.0.0-beta.2"
+    "lit-html": "^2.1.3",
+    "parcel": "^2.3.1"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "stylus": "^0.54.8"
+    "cssnano": "^5.0.17",
+    "stylus": "^0.56.0"
   },
   "targets": {
     "main": {
