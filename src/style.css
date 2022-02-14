@@ -1,134 +1,162 @@
 body {
-  font-family: 'Share Tech Mono', monospace;
-  width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    width: 100%;
 }
+
 h1 {
-  text-align: center;
-  font-size: 10rem;
-  margin: 0 auto;
-}
-.pink {
-  background-color: #ffc0cb;
-}
-.red {
-  background-color: #f00;
-}
-.blue {
-  background-color: #00f;
-  color: #fff;
-}
-.black {
-  background-color: #000;
-  color: #fff;
-}
-.green {
-  background-color: #008000;
-}
-.yellow {
-  background-color: #ff0;
-}
-.container {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.container .matrix {
-  flex: 0 0 auto;
-  box-shadow: 1px 1px 0 #ccc;
-  margin-right: 30px;
-  font-family: sans-serif;
-}
-.container .matrix .row {
-  display: flex;
-}
-.container .matrix .row .cell {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  box-shadow: 1px 1px 0 #ccc inset;
-  cursor: pointer;
-}
-.container .matrix .row .cell:after {
-  background: radial-gradient(circle at 50%, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 40%, rgba(250,250,250,0.3) 0%, rgba(0,0,0,0.5) 200%);
-  content: '';
-  display: block;
-  width: 30px;
-  height: 30px;
-  opacity: 0.2;
-}
-.container .matrix .row .cell:hover:after {
-  opacity: 0.7;
-}
-.controls {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 250px;
-}
-.controls .selected-color {
-  padding: 15px 10px;
-  margin: 2px;
-  text-align: center;
-  font-size: 1em;
-}
-.controls .options > div {
-  padding: 5px;
-  margin-top: 2px;
-  border: 2px solid #000;
-  background-color: #ff0;
-  text-align: center;
-  cursor: pointer;
-}
-.controls .options > div:hover {
-  background-color: #faebd7;
-}
-.controls .colors {
-  flex: 0 0 200px;
-  flex-wrap: wrap;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-}
-.controls .colors .color {
-  flex: 1 0 auto;
-  justify-content: center;
-  display: flex;
-  padding: 10px;
-  margin: 2px;
-  cursor: pointer;
-  border: 2px groove #00008b;
-}
-.controls .colors .color:hover {
-  background-color: #faebd7;
-  color: #000;
-}
-@media (max-width: 540px) {
-  h1 {
-    font-size: 5rem;
-  }
-  .container {
     text-align: center;
-  }
-  .container .matrix {
-    margin-right: 0;
-  }
-  .container .matrix .row .cell {
-    width: 18px;
-    height: 18px;
-  }
-  .container .matrix .row .cell:after {
-    width: 18px;
-    height: 18px;
-  }
-  .controls {
-    margin-top: 20px;
-  }
-  .controls .selected-color {
+    font-size: 10rem;
+    margin: 0 auto;
+}
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.red {
+    background-color: #f00;
+}
+
+.blue {
+    background-color: #00f;
+    color: #fff;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.yellow {
+    background-color: #ff0;
+}
+
+.container {
+    display: flex;
     padding: 10px;
-  }
-  .controls .colors {
-    flex: auto;
-  }
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .matrix {
+    flex: 0 0 auto;
+    box-shadow: 1px 1px 0 #ccc;
+    margin-right: 30px;
+    font-family: sans-serif;
+}
+
+.container .matrix .row {
+    display: flex;
+}
+
+.container .matrix .row .cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    box-shadow: 1px 1px 0 #ccc inset;
+    cursor: pointer;
+}
+
+.container .matrix .row .cell:after {
+    background: radial-gradient(circle at 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 40%, rgba(250, 250, 250, 0.3) 0%, rgba(0, 0, 0, 0.5) 200%);
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+}
+
+.container .matrix .row .cell:hover:after {
+    opacity: 0.7;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.controls .selected-color {
+    padding: 15px 10px;
+    margin: 2px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.controls .options > div {
+    padding: 5px;
+    margin-top: 2px;
+    border: 2px solid #000;
+    background-color: #ff0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.controls .options > div:hover {
+    background-color: #faebd7;
+}
+
+.controls .colors {
+    flex: 0 0 200px;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.controls .colors .color {
+    flex: 1 0 auto;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+    border: 2px groove #00008b;
+}
+
+.controls .colors .color:hover {
+    background-color: #faebd7;
+    color: #000;
+}
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container .matrix {
+        margin-right: 0;
+    }
+
+    .container .matrix .row .cell {
+        width: 18px;
+        height: 18px;
+    }
+
+    .container .matrix .row .cell:after {
+        width: 18px;
+        height: 18px;
+    }
+
+    .controls {
+        margin-top: 20px;
+    }
+
+    .controls .selected-color {
+        padding: 10px;
+    }
+
+    .controls .colors {
+        flex: auto;
+    }
 }
