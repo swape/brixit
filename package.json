@@ -1,6 +1,6 @@
 {
   "name": "brixit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Alireza Balouch <swape@swape.net>",
   "description": "Demo project to demonstrate parcel and lit-html",
