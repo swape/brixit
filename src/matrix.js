@@ -1,9 +1,9 @@
 // @ts-check
 
-import { html } from 'lit-html'
-import { myMatrix } from './constants'
-import { reRender } from './common'
-import { repeat } from 'lit-html/directives/repeat.js'
+import {html} from 'lit-html'
+import {myMatrix} from './constants'
+import {reRender} from './common'
+import {repeat} from 'lit-html/directives/repeat.js'
 import store from './store'
 
 const togglePosColor = posName => {
@@ -21,7 +21,7 @@ const clickHandler = posName => {
 
 document.addEventListener(
   'dragover',
-  function(event) {
+  function (event) {
     event.preventDefault()
     if (event.target.dataset.posname) {
       store.pos[event.target.dataset.posname] = store.selectedColor
