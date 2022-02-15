@@ -89,8 +89,15 @@ h1 {
     font-size: 1em;
 }
 
-.controls .options > div {
-    padding: 5px;
+.controls .options {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.controls .options > button {
+    padding: 5px 10px;
+    width: 100%;
     margin-top: 2px;
     border: 2px solid #000;
     background-color: #ff0;
@@ -98,7 +105,7 @@ h1 {
     cursor: pointer;
 }
 
-.controls .options > div:hover {
+.controls .options > button:hover {
     background-color: #faebd7;
 }
 
