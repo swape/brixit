@@ -5,4 +5,10 @@ const store = {
   pos: {},
 }
 
+export function setStore(value) {
+  if (value?.pos) {
+    store.pos = value.pos
+  }
+}
+
 export default store
