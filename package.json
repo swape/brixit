@@ -5,25 +5,15 @@
   "author": "Alireza Balouch <swape@swape.net>",
   "description": "Demo project to demonstrate parcel and lit-html",
   "repository": "https://github.com/swape/brixit",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "npx parcel ./src/index.html",
-    "build": "npx parcel build ./src/index.html --no-source-maps"
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "dependencies": {
-    "lit-html": "^2.1.3",
-    "parcel": "^2.3.1"
+    "lit-html": "^2.1.3"
   },
   "devDependencies": {
-    "cssnano": "^5.0.17",
-    "stylus": "^0.56.0"
-  },
-  "targets": {
-    "main": {
-      "engines": {
-        "browsers": "> 0.25%",
-        "distDir": "./public",
-        "outputFormat": "esmodule"
-      }
-    }
+    "parcel": "^2.3.1"
   }
 }
