@@ -1,9 +1,9 @@
 // @ts-check
 
-import { colors } from './constants'
-import { html } from 'lit-html'
-import { reRender } from './common'
-import store from './store'
+import {colors} from './constants'
+import {html} from 'lit-html'
+import {downloadAsFile, reRender, uploadJson} from './common'
+import store, {setStore} from './store'
 
 const setColor = colorName => {
   store.selectedColor = colorName
@@ -26,11 +26,28 @@ const controlColors = html`
   </div>
 `
 
+const saveFile = () => {
+  downloadAsFile('brixit-file.json', JSON.stringify(store))
+}
+
+
+const loadFile = () => {
+  uploadJson().then((data) => {
+    setStore(data)
+    reRender()
+  }).catch(alert)
+}
+
+const cleanStore = () => {
+  setStore({pos: {}})
+  reRender()
+}
+
 const options = html`
   <div class="options">
-    <div>Load</div>
-    <div>Save</div>
-    <div>Clear</div>
+    <button @click=${() => loadFile()}>Load</button>
+    <button @click=${() => saveFile()}>Save</button>
+    <button @click=${() => cleanStore()}>Clear</button>
   </div>
 `
 
