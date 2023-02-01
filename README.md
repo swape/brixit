@@ -1,6 +1,6 @@
 # brixit
 
-Demo project to demonstrate parcel, lit-html and stylus.
+Drawing project to demonstrate parcel and lit-html.
 
 <https://github.com/swape/brixit>
 
